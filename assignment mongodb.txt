@@ -26,7 +26,7 @@ Query 2=>Retrive the books which contains title as java and year of publication 
 db.books.find({"book_title":/.*Java.*/,"year_of_publication":{$lt:2015}});
 
 Query 3=>Retrive the name of author who has written more than two books
-db.books.find({"book_title":{$gt:2}}).count();
+db.books.find();
 
 Query 4=>Retrive the boosks whose edition is between 3 and 4
 db.books.find({"edition":{$gte: 3,$lt: 4}});
